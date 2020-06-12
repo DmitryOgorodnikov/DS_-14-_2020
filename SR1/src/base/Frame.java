@@ -144,14 +144,14 @@ public class Frame extends javax.swing.JFrame {
         add1Layout.setHorizontalGroup(
             add1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(add1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(add1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(add1Layout.createSequentialGroup()
-                        .addComponent(btn8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn9))
-                    .addGroup(add1Layout.createSequentialGroup()
-                        .addContainerGap()
                         .addGroup(add1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(add1Layout.createSequentialGroup()
+                                .addComponent(btn8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btn9))
                             .addGroup(add1Layout.createSequentialGroup()
                                 .addGroup(add1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(lb3)
@@ -177,11 +177,8 @@ public class Frame extends javax.swing.JFrame {
                                     .addGroup(add1Layout.createSequentialGroup()
                                         .addComponent(sp1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(0, 122, Short.MAX_VALUE))
-                                    .addComponent(scb1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
-                .addContainerGap())
-            .addGroup(add1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(add1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(scb1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addContainerGap())
                     .addGroup(add1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(lbprice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -233,10 +230,11 @@ public class Frame extends javax.swing.JFrame {
                     .addComponent(lb10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(error1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(13, 13, 13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(add1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn8)
-                    .addComponent(btn9)))
+                    .addComponent(btn9))
+                .addGap(7, 7, 7))
         );
 
         lb01.setText("-");
@@ -495,7 +493,7 @@ public class Frame extends javax.swing.JFrame {
         btn6.setEnabled(true);
         btn7.setEnabled(true);
         model.setRowCount (0);
-        model.setColumnIdentifiers(new Object[]{"Имя", "Дата начала)", "Длительность(в днях)", "Описание"});
+        model.setColumnIdentifiers(new Object[]{"Имя", "Дата начала", "Длительность(в днях)", "Описание"});
         lb01.setText("Имя");
         lb02.setText("Дата начала(День.Месяц.Год)");
         lb03.setText("Длительность(в днях)");
