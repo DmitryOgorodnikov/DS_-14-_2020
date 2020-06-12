@@ -9,10 +9,10 @@ package types;
  * @author TanatosX
  */
 public class Promotions {
-    public String name;
-    public String data;
-    public int duration;
-    public String essence;
+    private String name;
+    private String data;
+    private int duration;
+    private String essence;
     
     public Promotions() {
         this.name = "";

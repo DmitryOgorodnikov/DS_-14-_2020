@@ -9,14 +9,14 @@ package types;
  * @author TanatosX
  */
 public class Autoparts {
-    public int id;
-    public String name;
-    public String brand;
-    public String supplie;
-    public String warranty;
-    public String promotion;
-    public int kol;
-    public double price;
+    private int id;
+    private String name;
+    private String brand;
+    private String supplie;
+    private String warranty;
+    private String promotion;
+    private int kol;
+    private double price;
 
     public Autoparts() {
         this.id = 0;
