@@ -24,5 +24,11 @@ public interface Operation {
     List<Suppliers> remListS (int sr);
     List<Warranty> remListW (int sr);
     
+    List<Autoparts> addNewAutopart (Autoparts item);
+    List<Brands> addNewBrand (Brands item);
+    List<Promotions> addNewPromotion (Promotions item);
+    List<Suppliers> addNewSupplier (Suppliers item);
+    List<Warranty> addNewWarranty (Warranty item);
+    
     int getSum ();
 }

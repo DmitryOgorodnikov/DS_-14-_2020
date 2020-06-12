@@ -85,26 +85,31 @@ public class OperationImpl implements Operation {
         return lstW;
     }
     
+    @Override
     public List<Autoparts> addNewAutopart (Autoparts item){
     lstA.add(item);
     return lstA;
     }
     
+    @Override
     public List<Brands> addNewBrand (Brands item){
     lstB.add(item);
     return lstB;
     }
     
+    @Override
     public List<Promotions> addNewPromotion (Promotions item){
     lstP.add(item);
     return lstP;
     }
     
+    @Override
     public List<Suppliers> addNewSupplier (Suppliers item){
     lstS.add(item);
     return lstS;
     }
     
+    @Override
     public List<Warranty> addNewWarranty (Warranty item){
     lstW.add(item);
     return lstW;

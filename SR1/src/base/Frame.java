@@ -700,18 +700,23 @@ public class Frame extends javax.swing.JFrame {
             case 1:
                 doClearTable();
                 doVivodA (Operations.remListA(sr));
+                break;
             case 2:
                 doClearTable();
                 doVivodB (Operations.remListB(sr));
+                break;
             case 3:
                 doClearTable();
                 doVivodP (Operations.remListP(sr));
+                break;
             case 4:
                 doClearTable();
                 doVivodS (Operations.remListS(sr));
+                break;
             case 5:
                 doClearTable();
                 doVivodW (Operations.remListW(sr));
+                break;
         }
     }//GEN-LAST:event_btn7ActionPerformed
 
