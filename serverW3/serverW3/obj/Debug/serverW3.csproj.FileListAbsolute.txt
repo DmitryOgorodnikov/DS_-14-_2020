@@ -1,7 +1,0 @@
-E:\1\serverW3\serverW3\bin\Debug\serverW3.exe.config
-E:\2\SW3\serverW3\serverW3\bin\Debug\serverW3.exe.config
-E:\2\SW3\serverW3\serverW3\bin\Debug\serverW3.exe
-E:\2\SW3\serverW3\serverW3\bin\Debug\serverW3.pdb
-E:\2\SW3\serverW3\serverW3\obj\Debug\serverW3.csprojResolveAssemblyReference.cache
-E:\2\SW3\serverW3\serverW3\obj\Debug\serverW3.exe
-E:\2\SW3\serverW3\serverW3\obj\Debug\serverW3.pdb
