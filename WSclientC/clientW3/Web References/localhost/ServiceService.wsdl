@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service_endpoint/" name="ServiceService" targetNamespace="http://service_endpoint/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WS/Service?xsd=1" namespace="http://types/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WS/Service?xsd=2" namespace="http://service_endpoint/" />
+    </xsd:schema>
+  </types>
+  <message name="getA">
+    <part name="parameters" element="tns:getA" />
+  </message>
+  <message name="getAResponse">
+    <part name="parameters" element="tns:getAResponse" />
+  </message>
+  <message name="setA">
+    <part name="parameters" element="tns:setA" />
+  </message>
+  <message name="setAResponse">
+    <part name="parameters" element="tns:setAResponse" />
+  </message>
+  <message name="remA">
+    <part name="parameters" element="tns:remA" />
+  </message>
+  <message name="remAResponse">
+    <part name="parameters" element="tns:remAResponse" />
+  </message>
+  <message name="getSumA">
+    <part name="parameters" element="tns:getSumA" />
+  </message>
+  <message name="getSumAResponse">
+    <part name="parameters" element="tns:getSumAResponse" />
+  </message>
+  <message name="getB">
+    <part name="parameters" element="tns:getB" />
+  </message>
+  <message name="getBResponse">
+    <part name="parameters" element="tns:getBResponse" />
+  </message>
+  <message name="setB">
+    <part name="parameters" element="tns:setB" />
+  </message>
+  <message name="setBResponse">
+    <part name="parameters" element="tns:setBResponse" />
+  </message>
+  <message name="remB">
+    <part name="parameters" element="tns:remB" />
+  </message>
+  <message name="remBResponse">
+    <part name="parameters" element="tns:remBResponse" />
+  </message>
+  <message name="getP">
+    <part name="parameters" element="tns:getP" />
+  </message>
+  <message name="getPResponse">
+    <part name="parameters" element="tns:getPResponse" />
+  </message>
+  <message name="setP">
+    <part name="parameters" element="tns:setP" />
+  </message>
+  <message name="setPResponse">
+    <part name="parameters" element="tns:setPResponse" />
+  </message>
+  <message name="remP">
+    <part name="parameters" element="tns:remP" />
+  </message>
+  <message name="remPResponse">
+    <part name="parameters" element="tns:remPResponse" />
+  </message>
+  <message name="getS">
+    <part name="parameters" element="tns:getS" />
+  </message>
+  <message name="getSResponse">
+    <part name="parameters" element="tns:getSResponse" />
+  </message>
+  <message name="setS">
+    <part name="parameters" element="tns:setS" />
+  </message>
+  <message name="setSResponse">
+    <part name="parameters" element="tns:setSResponse" />
+  </message>
+  <message name="remS">
+    <part name="parameters" element="tns:remS" />
+  </message>
+  <message name="remSResponse">
+    <part name="parameters" element="tns:remSResponse" />
+  </message>
+  <message name="getW">
+    <part name="parameters" element="tns:getW" />
+  </message>
+  <message name="getWResponse">
+    <part name="parameters" element="tns:getWResponse" />
+  </message>
+  <message name="setW">
+    <part name="parameters" element="tns:setW" />
+  </message>
+  <message name="setWResponse">
+    <part name="parameters" element="tns:setWResponse" />
+  </message>
+  <message name="remW">
+    <part name="parameters" element="tns:remW" />
+  </message>
+  <message name="remWResponse">
+    <part name="parameters" element="tns:remWResponse" />
+  </message>
+  <portType name="Service">
+    <operation name="getA">
+      <input message="tns:getA" />
+      <output message="tns:getAResponse" />
+    </operation>
+    <operation name="setA">
+      <input message="tns:setA" />
+      <output message="tns:setAResponse" />
+    </operation>
+    <operation name="remA">
+      <input message="tns:remA" />
+      <output message="tns:remAResponse" />
+    </operation>
+    <operation name="getSumA">
+      <input message="tns:getSumA" />
+      <output message="tns:getSumAResponse" />
+    </operation>
+    <operation name="getB">
+      <input message="tns:getB" />
+      <output message="tns:getBResponse" />
+    </operation>
+    <operation name="setB">
+      <input message="tns:setB" />
+      <output message="tns:setBResponse" />
+    </operation>
+    <operation name="remB">
+      <input message="tns:remB" />
+      <output message="tns:remBResponse" />
+    </operation>
+    <operation name="getP">
+      <input message="tns:getP" />
+      <output message="tns:getPResponse" />
+    </operation>
+    <operation name="setP">
+      <input message="tns:setP" />
+      <output message="tns:setPResponse" />
+    </operation>
+    <operation name="remP">
+      <input message="tns:remP" />
+      <output message="tns:remPResponse" />
+    </operation>
+    <operation name="getS">
+      <input message="tns:getS" />
+      <output message="tns:getSResponse" />
+    </operation>
+    <operation name="setS">
+      <input message="tns:setS" />
+      <output message="tns:setSResponse" />
+    </operation>
+    <operation name="remS">
+      <input message="tns:remS" />
+      <output message="tns:remSResponse" />
+    </operation>
+    <operation name="getW">
+      <input message="tns:getW" />
+      <output message="tns:getWResponse" />
+    </operation>
+    <operation name="setW">
+      <input message="tns:setW" />
+      <output message="tns:setWResponse" />
+    </operation>
+    <operation name="remW">
+      <input message="tns:remW" />
+      <output message="tns:remWResponse" />
+    </operation>
+  </portType>
+  <binding name="ServicePortBinding" type="tns:Service">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getA">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setA">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="remA">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getSumA">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getB">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setB">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="remB">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getP">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setP">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="remP">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="remS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getW">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setW">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="remW">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ServiceService">
+    <port name="ServicePort" binding="tns:ServicePortBinding">
+      <soap:address location="http://localhost:8080/WS/Service" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://types/" targetNamespace="http://types/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="listA">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:autoparts" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="autoparts">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="brand" type="xs:string" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element name="kol" type="xs:int" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element name="price" type="xs:double" />
+      <xs:element minOccurs="0" name="promotion" type="xs:string" />
+      <xs:element minOccurs="0" name="supplie" type="xs:string" />
+      <xs:element minOccurs="0" name="warranty" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listB">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:brands" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="brands">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="suppliers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="address" type="xs:string" />
+      <xs:element name="inn" type="xs:long" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element name="telephone" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:suppliers" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="warranty">
+    <xs:sequence>
+      <xs:element name="duration" type="xs:int" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listW">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:warranty" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listP">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:promotions" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="promotions">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="data" type="xs:string" />
+      <xs:element name="duration" type="xs:int" />
+      <xs:element minOccurs="0" name="essence" type="xs:string" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
